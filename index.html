@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анастасия - IT-специалист</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-scroll"></div>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="sidebar-toggle" id="leftToggle">
+            <span class="toggle-line"></span>
+            <span class="toggle-line"></span>
+            <span class="toggle-line"></span>
+        </div>
+        
+        <nav class="icon-menu">
+            <a href="#home" class="icon-nav-item active">
+                <i class="fas fa-home"></i>
+                <span class="nav-text">Главная</span>
+            </a>
+            <a href="#about" class="icon-nav-item">
+                <i class="fas fa-user"></i>
+                <span class="nav-text">Обо мне</span>
+            </a>
+            <a href="#achievements" class="icon-nav-item">
+                <i class="fas fa-trophy"></i>
+                <span class="nav-text">Достижения</span>
+            </a>
+            <a href="#technologies" class="icon-nav-item">
+                <i class="fas fa-code"></i>
+                <span class="nav-text">Технологии</span>
+            </a>
+            <a href="#" class="icon-nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span class="nav-text">Портфолио</span>
+            </a>
+            <a href="#" class="icon-nav-item">
+                <i class="fas fa-envelope"></i>
+                <span class="nav-text">Контакты</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Home Page -->
+    <section class="home-page" id="home">
+        <div class="home-container">
+            <div class="home-left">
+                <div class="home-content">
+                    <h1 class="home-title">ПРИВЕТ!</h1>
+                    <h2 class="home-name">
+                        <span class="outlined-name">Я АНАСТАСИЯ</span>
+                    </h2>
+                    <div class="home-roles">
+                        <p>IT-СПЕЦИАЛИСТ</p>
+                    </div>
+                    <div class="home-description">
+                        <p>Разбираю сложные задачи на части и нахожу для них работающие решения. Изучаю, как устроены процессы в digital-сфере, и помогаю их улучшать.</p>
+                        <p>Мне важно, чтобы итоговое решение было не только эффективным, но и понятным для всех.</p>
+                    </div>
+                    <div class="home-divider"></div>
+                    <a href="#about" class="btn-primary">Подробнее обо мне 🠖</a>
+                </div>
+            </div>
+            
+            <div class="home-right">
+                <div class="photo-nav-container">
+                    <!-- Background decoration -->
+                    <svg class="arc-svg" viewBox="0 0 400 400">
+                        <path class="arc-path" d="M 200,50 A 150,150 0 0,1 350,200" 
+                              fill="none" stroke="#6d2e46ff" stroke-width="2"/>
+                    </svg>
+                    
+                    <!-- Photo -->
+                    <div class="profile-photo-wrapper">
+                        <img src="img/me.jpg" alt="Анастасия" class="profile-photo">
+                    </div>
+                    
+                    <!-- Icons on arc -->
+                    <div class="arc-icons" id="arcIcons"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2 class="section-title">Обо мне</h2>
+            
+            <div class="about-card">
+                <div class="about-photo-section">
+                    <div class="about-photo-wrapper">
+                        <img src="img/me2.jpg" alt="Анастасия" class="about-photo">
+                        <div class="photo-decoration"></div>
+                    </div>
+                </div>
+                
+                <div class="about-content-section">
+                    <div class="about-text">
+                        <h3 class="about-subtitle">Студентка Академии управления</h3>
+                        <p class="about-intro">Я учусь на специальности «Управление информационными ресурсами» в Академии управления и активно развиваюсь в IT-сфере. Мой подход сочетает технические навыки с аналитическим мышлением, что позволяет мне создавать эффективные решения для сложных задач.</p>
+                        
+                        <div class="academy-learnings">
+                            <h4><i class="fas fa-graduation-cap"></i> Что я освоила в Академии:</h4>
+                            <ul class="learning-list">
+                                <li>Управление IT-проектами по методологиям Agile, Scrum, Kanban</li>
+                                <li>Системный анализ и проектирование информационных систем</li>
+                                <li>Работа с базами данных и SQL</li>
+                                <li>Разработка программного обеспечения на C++ и Python</li>
+                                <li>Анализ бизнес-процессов и их оптимизация</li>
+                                <li>UML/BPMN моделирование и создание технической документации</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2">2+</div>
+                            <div class="stat-label">года в IT</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">5+</div>
+                            <div class="stat-label">завершенных проектов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">100%</div>
+                            <div class="stat-label">результативность</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section" id="achievements">
+        <div class="achievements-container">
+            <div class="achievements-header">
+                <h2 class="section-title">Мои достижения</h2>
+                <p class="section-subtitle">Проекты и навыки, которые я развиваю в IT-сфере</p>
+            </div>
+            
+            <div class="achievements-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-corner"></div>
+                    <div class="project-image">
+                        <img src="img/ach_c.jpg" alt="C++ Development">
+                        <div class="project-overlay"></div>
+                        <span class="project-badge">Программирование</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Разработка на C++</h3>
+                        <p>Разработчик полного цикла учебного проекта "Система управления образовательными стандартами" на C++/Windows Forms. Реализация модуля работы с БД, SQL-запросы, CRUD-операции.</p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Windows Forms</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">GitHub</span>
+                        </div>
+                        <a href="#" class="project-link">Подробнее<span class="arrow">→</span></a>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-corner"></div>
+                    <div class="project-image">
+                        <img src="img/ach_py.jpg" alt="Python Development">
+                        <div class="project-overlay"></div>
+                        <span class="project-badge">Программирование</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Python разработка</h3>
+                        <p>Разработка десктопного приложения на Python/Qt для многокритериальной оценки цифровых компетенций. Проектирование БД в Erwin, внедрение модуля визуализации результатов с диаграммами.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Qt</span>
+                            <span class="tag">Erwin</span>
+                            <span class="tag">Data Visualization</span>
+                        </div>
+                        <a href="#" class="project-link">Подробнее<span class="arrow">→</span></a>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-corner"></div>
+                    <div class="project-image">
+                        <img src="img/ach_manage.jpg" alt="Project Management">
+                        <div class="project-overlay"></div>
+                        <span class="project-badge">Управление</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Управление IT-проектами</h3>
+                        <p>Product Manager модернизации курса «Управление IT-проектами» в Moodle. Управление полным жизненным циклом проекта, координация команды по методологиям Agile, проведение встреч.</p>
+                        <div class="project-tags">
+                            <span class="tag">Agile</span>
+                            <span class="tag">Scrum</span>
+                            <span class="tag">Product Management</span>
+                            <span class="tag">Moodle</span>
+                        </div>
+                        <a href="#" class="project-link">Подробнее<span class="arrow">→</span></a>
+                    </div>
+                </div>
+                
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <div class="project-corner"></div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Data Analysis">
+                        <div class="project-overlay"></div>
+                        <span class="project-badge">Аналитика</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Анализ данных и визуализация</h3>
+                        <p>Анализ и проектирование систем: SWOT, системный и ситуационный анализ, сбор требований, написание ТЗ. Владение UML/BPMN, моделирование в Draw.io, Ramus. Создание отчетов и визуализаций.</p>
+                        <div class="project-tags">
+                            <span class="tag">SWOT</span>
+                            <span class="tag">UML/BPMN</span>
+                            <span class="tag">Draw.io</span>
+                            <span class="tag">Ramus</span>
+                        </div>
+                        <a href="#" class="project-link">Подробнее<span class="arrow">→</span></a>
+                    </div>
+                </div>
+                
+                <!-- Project Card 5 -->
+                <div class="project-card">
+                    <div class="project-corner"></div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Business Optimization">
+                        <div class="project-overlay"></div>
+                        <span class="project-badge">Оптимизация</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Оптимизация бизнес-процессов</h3>
+                        <p>Автоматизация процессов оценки компетенций и управления учебной документацией. Снижение времени проведения оценки на 60%, повышение точности расчетов.</p>
+                        <div class="project-tags">
+                            <span class="tag">Process Automation</span>
+                            <span class="tag">Efficiency</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                        <a href="#" class="project-link">Подробнее<span class="arrow">→</span></a>
+                    </div>
+                </div>
+                
+                <!-- Project Card 6 -->
+                <div class="project-card">
+                    <div class="project-corner"></div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Web Development">
+                        <div class="project-overlay"></div>
+                        <span class="project-badge">Веб-разработка</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Веб-разработка и дизайн</h3>
+                        <p>Веб-разработка: HTML, CSS, JavaScript. Работа с системами контроля версий GitHub. Создание презентаций и отчетов в PowerPoint, Canva. Опыт выступлений перед заказчиками с презентацией.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Presentations</span>
+                        </div>
+                        <a href="#" class="project-link">Подробнее<span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies-section" id="technologies">
+        <div class="technologies-container">
+            <div class="technologies-header">
+                <h2 class="section-title">Технологии, которыми я владею</h2>
+                <p class="section-subtitle">Инструменты и технологии, которые использую в работе</p>
+            </div>
+            
+            <div class="technologies-grid">
+                <!-- Technology Card 1 -->
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="tech-title">Python & C++</h3>
+                    <p class="tech-description">Backend разработка, Data Science, системное программирование. Опыт работы с Qt, Windows Forms, создание десктопных приложений и анализ данных.</p>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 85%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый уровень</span>
+                    </div>
+                </div>
+                
+                <!-- Technology Card 2 -->
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="tech-title">SQL & Базы данных</h3>
+                    <p class="tech-description">Проектирование и работа с реляционными БД. PostgreSQL, MongoDB, создание эффективных запросов, оптимизация структур данных и CRUD-операции.</p>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 80%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый уровень</span>
+                    </div>
+                </div>
+                
+                <!-- Technology Card 3 -->
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="tech-title">HTML/CSS/JavaScript</h3>
+                    <p class="tech-description">Frontend разработка современных веб-интерфейсов. Адаптивный дизайн, работа с Tailwind CSS, создание интерактивных элементов и анимаций.</p>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 75%"></div>
+                        </div>
+                        <span class="level-text">Средний уровень</span>
+                    </div>
+                </div>
+                
+                <!-- Technology Card 4 -->
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="tech-title">Git & GitHub</h3>
+                    <p class="tech-description">Контроль версий кода, командная разработка. Опыт работы с ветками, pull requests, code review и CI/CD интеграциями.</p>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 78%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый уровень</span>
+                    </div>
+                </div>
+                
+                <!-- Technology Card 5 -->
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3 class="tech-title">Linux & Windows</h3>
+                    <p class="tech-description">Работа в различных операционных системах. Администрирование, bash-скрипты, настройка окружения, виртуализация и работа с серверами.</p>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 70%"></div>
+                        </div>
+                        <span class="level-text">Средний уровень</span>
+                    </div>
+                </div>
+                
+                <!-- Technology Card 6 -->
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="tech-title">Agile/Scrum/Kanban</h3>
+                    <p class="tech-description">Гибкие методологии управления проектами. Опыт работы Product Manager'ом, организация спринтов, стендапов, ретроспектив и планирование задач.</p>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 82%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый уровень</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
